@@ -225,7 +225,7 @@ template {
 
 .main-section{
   background: url(../images/bg-main.jpg);
-  background-position: center center;
+  background-position: 50% 62%;
   background-size: cover;
   background-repeat:no-repeat;
   height: 100vh;
@@ -475,21 +475,64 @@ template {
 
 
 @media (max-width: 1600px){
-  .main-section{
-    background-position: 50% 75%;
+  .main-section .main-form__wrapper{
+    -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
   }
+
+}
+
+@media (max-width: 1400px){
+  .main-section .main-form__wrapper{
+    -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  }
+
 }
 
 @media (max-width: 1200px) {
   .main__nav{
     margin-bottom: 10px;
+    width: 100%;
   }
+  
   .main__nav ul{
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 0 8px;
+  }
+}
+
+@media (max-width: 992px){
+  .main__nav ul{
+    justify-content: center;
     gap: 25px;
+    flex-wrap: wrap;
   }
 
+  .main-section .main-form__wrapper{
+    -webkit-transform: unset;
+      -ms-transform: unset;
+          transform: unset;
+  -webkit-transform-origin: unset;
+      -ms-transform-origin: unset;
+          transform-origin: unset;
+  }
+  .main-section > div > div{
+      -webkit-transform: unset;
+      -ms-transform: unset;
+          transform: unset;
+  -webkit-transform-origin: unset;
+      -ms-transform-origin: unset;
+          transform-origin: unset;
+  }
 }
 
 @media (max-width: 800px) {
@@ -648,6 +691,18 @@ template {
   }
   .main__nav ul{
     padding: 15px 6px;
+  }
+}
+
+@media (max-width: 375px){
+  .main-form__buttons {
+    margin: 5px 0;
+  }
+  .main__nav{
+    margin: 10px auto 0;
+  }
+  .main-form__inner {
+    margin: -79px auto 0;
   }
 }
 
