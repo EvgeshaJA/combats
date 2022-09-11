@@ -1,0 +1,297 @@
+<?php
+if(isset($_GET['time'])) {
+	echo time().'<br>'.date('d.m.Y H:i:s',(int)$_GET['time']);
+	die();
+}
+if(isset($_GET['za'])) {
+	function zago($v) {
+		if($v > 1700) {
+			$v = 1700;
+		}
+		$r = round( (1-( pow(0.5, ($v/399.51) ) ))*100 , 2 );
+		return $r;
+	}
+	echo zago(round((int)$_GET['za'])).'% защиты от урона.
+	';
+	die();
+}
+?>
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta name="yandex-verification" content="bb16e8afc190e175" />
+		<title>Бойцовский клуб – Игра Онлайн combats-club.com БК Браузерная - Официальный сайт</title>
+		<meta name="keywords" content="бойцовский клуб игра, бойцовский клуб играть, игра бойцовский клуб, старый бойцовский Клуб, бойцовский клуб онлайн игра, бойцовский клуб браузерная игра, играть в бойцовский клуб, игра бк, бк игра, старый бк, играть в бк, бк онлайн игра, новый бк, Легендарный Бойцовский Клуб, легендарный бк, combats, комбатс ру, combats ru,с combats com, OldBK, oldbk ru, oldbk com, олдбк ру, old bk, олд бк, mycombats org, rebk, recombats, oldcombats, obk2, likebk, legbk, kingbk, сombats-ru.com, официальный сайт, новый, типа, grandbk net, worldofcombat, fightcity, rivbk com, kombatz, опыт, playcombats, supbk ru, acombats, anticombats, obk2, goldbk, ordenbk, rpgtop su, primebk, vip, combats.fun, old combats com, топ rpg, комбатском игра, rpg top, комбатском, age-combats, oldbk2">
+		<meta name="description" content="«Официальный Бойцовский Клуб» – это увлекательная онлайн игра (БК-2 времен 2004-2009), в которой сконцентрировано все самое лучшее от современных онлайн игр. В этой браузерной игре заложены самые интересные традиции всем известной онлайн игры под названием «Combats 2004-2009», которая, кстати, стала первооткрывателем всех браузерных игр.">
+		<meta charset="windows-1251">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link type="text/css" rel="stylesheet" media="all" href="style.css" />
+		<link href="images/favicon.png" rel="icon" sizes="150x150" type="image/png">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js" type="text/javascript"></script>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+		   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		   ym(62280715, "init", {
+		        clickmap:true,
+		        trackLinks:true,
+		        accurateTrackBounce:true
+		   });
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/62280715" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135658239-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-135658239-2');
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	</head>
+	<body>
+		<section class="main-section">
+           	<div class="container-fluid">
+           		
+           		<div class="main-form_wrap">
+				   <div class="title-form">
+						<p>лучший бойцовский клуб</p>
+					</div>
+
+	            	<form action="/enter.php" method="post" class="main-form">
+						<div class="main-form__wrapper">
+							<input type="text" id="first-name" name="login" placeholder="Логин..." required>
+						</div>
+						<div class="main-form__wrapper">
+							<input type="password" id="last-name" name="psw" placeholder="Пароль..." required>
+						</div>
+	                    <div class="text-center">
+	                    	<a class="link_reg" href="/register">Регистрация</a>
+	                    </div>
+	                    <div class="button_wrap">
+	                    	<button><span>Войти</span></button>
+	                    </div>
+	            	</form>
+            	</div>
+
+            	<div class="text-center">
+	            	<nav>
+	            		<ul>
+	            			<li><a href="/news" target="_blank">Новости</a></li>
+	            			<li><a href="/repass">Восстановление пароля</a></li>
+	            			<li><a href="/forum" target="_blank">Форум</a></li>
+	            			<li><a href="/rating_pers" target="_blank">Рейтинг персонажей</a> </li>
+	            			<li><a href="/rating_clans" target="_blank">Рейтинг кланов</a></li>
+	            		</ul>
+	            	</nav>
+            	</div>
+            </div>
+        </section>
+
+        <section>
+        	<div class="container content-text">
+        		<p><small class="megatext"><strong>«Официальный Бойцовский Клуб»</strong> – это увлекательная <b>онлайн игра</b> (БК-2 времен 2004-2009), в которой сконцентрировано все самое лучшее от современных онлайн игр. В этой браузерной игре <strong>(oldbk)</strong> заложены самые интересные традиции всем известной онлайн игры под названием «<strong>combats-club.com</strong> 2004-2009», которая, кстати, стала первооткрывателем всех браузерных игр.</small>
+        		</p>
+        		<p><small class="megatext">В эту <strong>браузерную игру (олдбк) </strong> вошли предыдущие стратегии и прибавились новые технические разработки, которые сделали эту mmorpg top игру еще более увлекательной!</small></p>
+        		<p><small class="megatext">В <em> игре Старый Бойцовский клуб</em> вы можете выбрать одну из противоборствующих сторон, Свет и Тьма. Каждая из них имеет свои особенности, плюсы и минусы, и во многом определяет ваш игровой процесс. Для любителей «пофармить» ценные вещи (уникальные предметы, свитки чарования и руны усиления) открыты так называемые подземелья городов Angels, Emerald, Sand, Sun, Capital city и т.д. За порядком как и всегда пристально следят сотрудники Ордена Паладинов. <br>
+                <em>Игра «combats-club.com»</em> всегда рада «новым старым» игрокам <strong>БК 2</strong>, желает Вам приятной игры и громких побед!</small></p>
+                    
+                    
+                   
+                </p>
+                <small style="color: #d7d7d7; width: 100%;" class="megatext copy">
+                    <h1 class="text-center">Официальный Бойцовский Клуб (БК) - Браузерная Онлайн Игра combats-club.com</h1>
+                    <h2 class="text-center"> Виды заработка (фарма) в нашей игре Екр, кр или определенных предметов, вещей и т.д., а также Преимущества::</h2>
+                    <ul>
+                        <li>После регистрации персонажа в инвентаре Вы найдёте полезные подарки и чеки на 1000 екр.</li>
+                        <li>Опыт за победу 300% по будням и 350% по выходным.</li>
+                        <li>Цена за 1 ЕКР снижена до 1,5 руб.! (Это очень дешево при наших ценах на арты и екр-вещи). А также автоматич. бонусы к покупке ЕКР до 40%! (Зависит от количества купленных ЕКР).</li>
+                        <li>Вы можете зарабатывать от 2000 екр. в месяц (что в нашей игре считается не малыми средствами при наших расценках).</li>
+                        <li>Бонус за онлайн - каждый час можно получать кредиты или екры и Золотые монетки (используются для покупки Капюшона в Казначействе, на Торговой улице).</li>
+                        <li>8 пещер. ПТП, Мглы, Катакомбы, Гора легиона, Потерянный Вход, Туманные Низины, Бездна и Грибница.</li>
+                        <li>Хорошее выпадение дропа в пещерах.</li>
+                        <li>Турнирная локация Ледяной Каток (за победу выдается наградной чек на 10 Екр и за поражение на 5 Екр).</li>
+                        <li>Турнирная локация Руины Старого Замка (за победу выдается наградной чек на 10 Екр и за поражение на 5 Екр).</li>
+                        <li>Локация Карта Мира для захвата земель кланами и войнами на ней между ними за получения для своего клана их большего кол-ва и<br> соответственно большей выгоды всему клану т. к. с каждой земли каждый день капает всем соклановцам доход.</li>
+                        <li>Боты на ЦП 3 раза в день в 12, 19, 21 для 8-10 ур. и 21:10 для 11-12 ур. по МСК появляются за победу выдаются екры и опыт.</li>
+                        <li>Массовые хаотичные бои - Ежедневно (Понедельник (Артовые), Вторник (Артовые), Среда (Безартовые), Четверг (Артовые), Пятница (Безартовые), Суббота (Артовые) и Воскресенье (Безартовые)) для 8-10 ур. - на 18:00, 21:15, а для 11-12 ур. - на 18:30, 21:45. Ежедневно безартовые заявки в 16:00 для 8-10 ур., а в 16:30 для 11-12 ур.<br>Требуется набить урона в безарт заявках: 50 для 7-8 ур., 100 - 9 ур., 200 - 10 ур., 300 - 11-12 ур. В арт. заявках требуется только наличие от 5 артов. Награда: екры.</li>
+                        <li>Достижения (значки, кредиты и екры даются).</li>
+                        <li>Черепа выпадают в боях используются для покупки Лото билетов (интересные призы).</li>
+                        <li>Плавка рун в Храме Знаний как для продажи так и для собственных нужд.</li>
+                        <li>Ежедневные задания на 7 дней в неделю, за которые даются екры и призы.</li>
+                        <li>В хаотах даются за победу екры и опыт, а в призовых екры х2, призовая монета и опыт.</li>
+                        <li>Турнирные бои, за победу в которых даются екры, опыт и жетон.</li>
+                        <li>В Башне смерти можно найти екровые чеки, а также при победе получить кредиты.</li>
+                        <li>Также можно зарабатывать с помощью Пещер и Торговли.</li>
+                        <li>Мы в Топ-5 поисковика Google и в Топ-3 поисковика Yandex по нашей тематике, <br>а также включены и другие виды рекламы что позволяет всегда поддерживать стабильно большой онлайн (на данный момент это 300+ игроков!!!).
+                        <li>Выгодная Реферальная система, больше чем у кого-либо. Зовите друзей!</li>
+                        <li>Уникальная боевая система. Отличный баланс между разными классами воинов и магов.</li>
+                        <li>Начало игры с 7-го уровня, чтобы сразу играть в хаотичных или групповых боях.</li>
+                        <li>А если хочется быстро получить определенное количество ЕКР, то всегда можно купить за реальные деньги, с помощью кнопки <a href="https://combats-club.com/ekr1.php" target="_blank">Покупка ЕКР и Услуг</a> или <a href="https://combats-club.com/info/9584372" target="_blank">Алхимика - Дилер</a>.</li>
+                        <li>Возможность приобрести Премиум, VIP и Екр Обкаст аккаунты для получения различных бонусов и более комфортной игры.</li>
+                        <li>Также разрешена покупка ЕКР через Официального Дилера Проекта <a href="https://combats-club.com/info/9584372" target="_blank">Дилер</a> для других персонажей <br>(ваших родственников, друзей и т.д. с целью подарка или просто так в любых количествах).</li>
+                        <li>Постоянное обновление, разработка и поддержка проекта.</li>
+                        <li>Возможность стать Букмекером и/или DJ-проекта.</li>
+                        <li>Удобные страницы Букмекера (для работы со ставками) и DJ-панели (для заказа и подтверждения музыкальных заявок).
+                        <li>Удобная страница покупки Обкаста с нажатия кнопки в нижней панели.</li>
+                        <li>Удобная страница Мониторинга всех заявок, на которой расписаны Различные Турниры, старт локаций, нападения монстров, клановые войны и т. д.</li>
+                        <li>Удобные поиски в Инвентаре игроков, в магазинах, библиотеке, форуме что облегчает пользование игрой.</li>
+                        <li>Также присутствуют удобная Примерочная и Карта Подземелий.</li>
+                        <li>В Хижине знахаря можно неограниченно сбрасывать любые параметры.</li>
+                        <li>Возможность автоматической покупки личного образа Персонажа, Покупки кланового образа, Покупки образа питомца, <br>Покупки личного смайлика, Покупки личного подарка (в любом кол-ве), Смены никнейма персонажа.</li>
+                        <li>Возможность автоматического обмена КР на ЕКР и обратно.</li>
+                        <li>Локация Излом Хаоса.</li>
+                        <li>В игре присутствуют различные руны, чарки, заточки, подгонка.</li>
+                        <li>Возможность нападать нападалками в бой с ограничением игроков до 10х10 или 20х20 и с подачей заявок на вход.</li>
+                        <li>Удобный чат игры с 3 разделенными вкладками и возможностью его легко уменьшать и увеличивать.</li>
+                    </ul>
+                </small>
+                <p class="text-center"> Почта для связи support@combats-club.com</a> <br><br>
+
+                © 2018-<?=date('Y')?> <br><a href="//www.free-kassa.ru/" rel="nofollow"><img src="free-kassa-14.png" alt="free-kassa"></a>
+                </p>
+        	</div>
+        </section>
+        <script data-cfasync="false" src="js/email-decode.min.js"></script>
+		
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+		<!-- VK Widget -->
+		<div id="vk_groups"></div>
+		<script type="text/javascript">
+			VK.Widgets.Group("vk_groups", {mode: 1}, 189524751);
+		</script>
+
+		<script>
+			jQuery( document ).ready( function( ){
+
+				// For all the inputs that are text inputs
+				jQuery( 'input' ).each( function( ){
+					var $this = jQuery( this );
+
+					// get the label
+					var label = jQuery( 'label[for='+this.id+']' );
+
+					// If no label, then return to avoid errors
+					if( label.size( ) == 0 ){
+						return;
+					}
+
+					// create wrapper element
+					var wrapper = jQuery( '<div class="compactlabel-wrapper"></div>' );
+					$this.wrap( wrapper );
+
+					// move the label to before the the input
+					$this.before( label );
+
+					// create label backing
+					var backing = jQuery( '<div class="compactlabel-label-backing"></div>' )
+						.insertBefore( $this )
+						.height( label.height( ) )
+						.width( label.width( ) );
+
+					// basic style information
+					var labelOffset = label.position( ), inputOffset = $this.position( ), labelHeight = label.outerHeight( );
+
+					// flag for if on or off
+					var isHover = false, isFocus = false;
+
+					// a jQuery object of the backing and label to animate both together
+					var animatedElements = jQuery( backing.get( ) ).add( label.get( ) );
+
+
+					// common functionality for hover on and focus on
+					var on = function( event ){
+						$this.parent( ).addClass( 'compactlabel-wrapper-on' );
+						animatedElements.stop( ).animate( { "top": '-'+(labelHeight - inputOffset.top)+'px' } );
+
+					};
+
+					// common functionality for hover off and focus off
+					var off = function( event ){
+						if( isHover || isFocus ){
+							return;
+						}
+						if( inputEmpty ){
+							label.removeClass( 'compactlabel-hide' );
+						} else {
+							label.addClass( 'compactlabel-hide' );
+						}
+
+						if( !inputEmptyChange ){
+							animatedElements.stop( );
+						}
+
+						animatedElements.animate(
+							{ "top": labelOffset.top + 'px' },
+							function( ){
+								$this.parent( ).removeClass( 'compactlabel-wrapper-on' )
+							} );
+					};
+
+					var onHover = function( event ){
+						isHover = true;
+						on( event );
+					};
+
+					var offHover = function( event ){
+						isHover = false;
+						off( event );
+					};
+
+					var onFocus = function( event ){
+						isFocus = true;
+						on( event );
+					};
+
+					var offFocus = function( event ){
+						isFocus = false;
+						off( event );
+					};
+
+					// The pieces for keeping track if the value of the input is empty
+					var inputEmpty = false, inputEmptyStart = false, inputEmptyChange = false;
+					var checkInputEmpty = function( ){
+						inputEmpty = $this.val( ) == '';
+					};
+					checkInputEmpty( );
+					// ID for setTimeout for checkInputEmpty
+					var checkInputEmptyFnID = null;
+
+
+
+					if( !inputEmpty ){
+						label.addClass( 'compactlabel-hide' );
+					}
+
+					// add the events
+					// events to track if the value changed empty state
+					$this.focus( function( ){
+						inputEmptyStart = inputEmpty;
+						inputEmptyChange = false;
+						checkInputEmptyFnID = setInterval( checkInputEmpty, 50 );
+					} );
+
+					$this.blur( function( ){
+						clearInterval( checkInputEmptyFnID );
+						checkInputEmpty( );
+						inputEmptyChange = inputEmptyStart != inputEmpty;
+					} );
+
+					// animation events
+					$this.focus( onFocus );
+					$this.blur( offFocus );
+					$this.hover( onHover, offHover );
+					label.hover( onHover, offHover );
+
+				} );
+			} );
+
+		</script>
+	</body>
+</html>
