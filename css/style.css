@@ -474,7 +474,11 @@ template {
 }
 
 
-
+@media (max-width: 1600px){
+  .main-section{
+    background-position: 50% 75%;
+  }
+}
 
 @media (max-width: 1200px) {
   .main__nav{
