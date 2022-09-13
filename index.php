@@ -55,43 +55,69 @@ if(isset($_GET['za'])) {
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 	</head>
 	<body>
-		<section class="main-section">
-           	<div class="container-fluid">
-           		
-           		<div class="main-form_wrap">
-				   <div class="title-form">
-						<p>лучший бойцовский клуб</p>
-					</div>
 
-	            	<form action="/enter.php" method="post" class="main-form">
-						<div class="main-form__wrapper">
+	<section class="main-section">
+			<div class="container-fluid">
+				
+				<div class="main-form__wrapper">
+
+				 <div class="title-form">
+					 <p>лучший бойцовский клуб</p>
+				 </div>
+
+				 <div class="main-form__inner">
+					 <form action="/enter.php" method="post" class="main-form">
+
+						<div class="main-form__input">
 							<input type="text" id="first-name" name="login" placeholder="Логин..." required>
 						</div>
-						<div class="main-form__wrapper">
+
+						<div class="main-form__input">
 							<input type="password" id="last-name" name="psw" placeholder="Пароль..." required>
 						</div>
-	                    <div class="text-center">
-	                    	<a class="link_reg" href="/register">Регистрация</a>
-	                    </div>
-	                    <div class="button_wrap">
-	                    	<button><span>Войти</span></button>
-	                    </div>
-	            	</form>
-            	</div>
 
-            	<div class="text-center">
-	            	<nav>
-	            		<ul>
-	            			<li><a href="/news" target="_blank">Новости</a></li>
-	            			<li><a href="/repass">Восстановление пароля</a></li>
-	            			<li><a href="/forum" target="_blank">Форум</a></li>
-	            			<li><a href="/rating_pers" target="_blank">Рейтинг персонажей</a> </li>
-	            			<li><a href="/rating_clans" target="_blank">Рейтинг кланов</a></li>
-	            		</ul>
-	            	</nav>
-            	</div>
-            </div>
-        </section>
+ 
+						 <div class="main-form__buttons">
+ 
+							 <div class="main-form__buttons-img"></div>
+ 
+							 <div class="main-form__btn">
+								 <button class="enter" type="submit">Вход</button>
+							 </div>
+ 
+							 <svg 
+								  xmlns="http://www.w3.org/2000/svg"
+								  xmlns:xlink="http://www.w3.org/1999/xlink"
+								  width="9px" height="30px">
+								 <image  x="0px" y="0px" width="9px" height="30px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAQAAABHnLxMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCQkQEDLi4p9lAAAARklEQVQI1zXEIRKAIAAAweMwGIyO2Rdo8v9vsNmIJhrBcUYwsWFph+yyySqLzDLJKINEiRIkCP3Wr1Llk1ceKZLlliSnXD+lqA5w9yUpxAAAAABJRU5ErkJggg==" />
+							 </svg>
+ 
+ 
+							 <div class="main-form__btn">
+								 <button class="registration">
+									 <a class="link_reg registration-link" href="/register">Регистрация</a>
+								 </button>
+							 </div>
+						 </div>
+ 
+					 </form>
+				 </div>
+			 </div>
+
+			 <div class="text-center main__nav">
+				 <nav>
+					 <ul>
+						 <li><a href="/news" target="_blank">Новости</a></li>
+						 <li><a href="/repass">Восстановление&nbsp;пароля</a></li>
+						 <li><a href="/forum" target="_blank">Форум</a></li>
+						 <li><a href="/rating_pers" target="_blank">Рейтинг&nbsp;персонажей</a> </li>
+						 <li><a href="/rating_clans" target="_blank">Рейтинг&nbsp;кланов</a></li>
+					 </ul>
+				 </nav>
+			 </div>
+		 </div>
+	 	</section>
+
 
         <section>
         	<div class="container content-text">
